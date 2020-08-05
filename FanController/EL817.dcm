@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EL817
+D AC/DC Optocouple, dip4
+K AC DC Optocoupler
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name EL817)(type Legacy)(uri ${KIPRJMOD}/EL817.lib)(options "")(descr ""))
+  (lib (name BTA16)(type Legacy)(uri ${KIPRJMOD}/Libraries/triacs/BTA16.lib)(options "")(descr ""))
+  (lib (name FanController-rescue)(type Legacy)(uri ${KIPRJMOD}/FanController-rescue.lib)(options "")(descr ""))
+)
