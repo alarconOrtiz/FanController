@@ -14,10 +14,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Notes Line
-	1350 4050 1350 6250
 Text Notes 1500 4000 0    50   ~ 0
-Conectores de alimentacion\n
+Conectores de entrada y salida\n
 Text GLabel 2000 1800 0    50   Input ~ 0
 220AC
 Text GLabel 2000 2250 0    50   Input ~ 0
@@ -241,17 +239,17 @@ Fase_out
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5EDAB3AB
-P 2300 5550
-F 0 "J3" H 2380 5542 50  0000 L CNN
-F 1 "Conn_01x02" H 2380 5451 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2300 5550 50  0001 C CNN
-F 3 "~" H 2300 5550 50  0001 C CNN
-	1    2300 5550
+P 2300 5050
+F 0 "J3" H 2380 5042 50  0000 L CNN
+F 1 "Conn_01x02" H 2380 4951 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2300 5050 50  0001 C CNN
+F 3 "~" H 2300 5050 50  0001 C CNN
+	1    2300 5050
 	1    0    0    -1  
 $EndComp
-Text GLabel 2100 5650 0    50   Input ~ 0
+Text GLabel 2100 5150 0    50   Input ~ 0
 Neutro
-Text GLabel 2100 5550 0    50   Input ~ 0
+Text GLabel 2100 5050 0    50   Input ~ 0
 Fase_out
 $Comp
 L ESP3286:NodeMCU1.0(ESP-12E) U3
@@ -329,29 +327,47 @@ NoConn ~ 7500 4800
 NoConn ~ 7500 4900
 NoConn ~ 7500 5000
 NoConn ~ 7500 5100
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5ECAE5DF
-P 2300 5050
-F 0 "J2" H 2380 5042 50  0000 L CNN
-F 1 "Conn_01x02" H 2380 4951 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2300 5050 50  0001 C CNN
-F 3 "~" H 2300 5050 50  0001 C CNN
-	1    2300 5050
-	1    0    0    -1  
-$EndComp
-Text GLabel 2100 5050 0    50   Input ~ 0
+Text GLabel 5050 4350 2    50   Input ~ 0
 VDD
-Text GLabel 2100 5150 0    50   Input ~ 0
+Text GLabel 5050 4550 2    50   Input ~ 0
 GND_VDD
 Text GLabel 7500 5700 0    50   Input ~ 0
 VDD
 Text GLabel 7500 5600 0    50   Input ~ 0
 GND_VDD
 Wire Notes Line
-	1350 6250 3400 6250
-Wire Notes Line
-	3400 6250 3400 4050
+	1350 5350 3400 5350
 Wire Notes Line
 	3400 4050 1350 4050
+$Comp
+L Converter_ACDC:HLK-PM03 PS?
+U 1 1 5F2C88CC
+P 4650 4450
+F 0 "PS?" H 4650 4775 50  0000 C CNN
+F 1 "HLK-PM03" H 4650 4684 50  0000 C CNN
+F 2 "Converter_ACDC:Converter_ACDC_HiLink_HLK-PMxx" H 4650 4150 50  0001 C CNN
+F 3 "http://www.hlktech.net/product_detail.php?ProId=59" H 5050 4100 50  0001 C CNN
+	1    4650 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 4350 0    50   Input ~ 0
+220AC
+Text GLabel 4250 4550 0    50   Input ~ 0
+Neutro
+Wire Notes Line
+	3400 4050 3400 5350
+Wire Notes Line
+	3850 4050 3850 5350
+Wire Notes Line
+	3850 5350 6050 5350
+Wire Notes Line
+	6050 5350 6050 4050
+Wire Notes Line
+	6050 4050 3850 4050
+Text Notes 3950 4000 0    50   ~ 0
+Fuente de alimentación ESP12E\n
+Text Notes 4100 4950 0    50   ~ 0
+nota: Faltan filtrar la salida y añadir proteccion.
+Wire Notes Line
+	1350 4050 1350 5350
 $EndSCHEMATC
