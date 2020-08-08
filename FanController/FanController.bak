@@ -16,10 +16,6 @@ Comment4 ""
 $EndDescr
 Text Notes 1500 4000 0    50   ~ 0
 Conectores de entrada y salida\n
-Text GLabel 2000 1800 0    50   Input ~ 0
-220AC
-Text GLabel 2000 2250 0    50   Input ~ 0
-Neutro
 $Comp
 L Device:R R1
 U 1 1 5ECD00D2
@@ -34,16 +30,14 @@ $EndComp
 $Comp
 L Device:R R4
 U 1 1 5ECD0D61
-P 2150 2450
-F 0 "R4" H 2220 2496 50  0000 L CNN
-F 1 "47K" H 2220 2405 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2080 2450 50  0001 C CNN
-F 3 "~" H 2150 2450 50  0001 C CNN
-	1    2150 2450
+P 2300 2450
+F 0 "R4" H 2370 2496 50  0000 L CNN
+F 1 "47K" H 2370 2405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2230 2450 50  0001 C CNN
+F 3 "~" H 2300 2450 50  0001 C CNN
+	1    2300 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3250 2600 2150 2600
 $Comp
 L Device:R R5
 U 1 1 5ECDD044
@@ -59,15 +53,7 @@ Text GLabel 4750 3100 3    50   Input ~ 0
 GND_3V3
 Wire Wire Line
 	4750 3100 4750 2950
-Wire Notes Line
-	1400 1200 1400 3700
-Wire Notes Line
-	1400 3700 5500 3700
-Wire Notes Line
-	5500 3700 5500 1200
-Wire Notes Line
-	5500 1200 1400 1200
-Text Notes 1450 1150 0    50   ~ 0
+Text Notes 1400 950  0    50   ~ 0
 Entrada AC y conversion a sinosoudal de baja tensión\n
 Wire Wire Line
 	3550 1950 3550 2450
@@ -102,8 +88,6 @@ F 3 "http://www.fairchildsemi.com/ds/MO/MOC3020M.pdf" H 4275 2550 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 1800 2150 1800
-Wire Wire Line
 	4600 2650 4750 2650
 Connection ~ 4750 2650
 Wire Wire Line
@@ -115,33 +99,27 @@ ADC
 $Comp
 L Device:Varistor RV1
 U 1 1 5ED798EB
-P 2150 2000
-F 0 "RV1" H 2253 2046 50  0000 L CNN
-F 1 "Varistor" H 2253 1955 50  0000 L CNN
-F 2 "Varistor:RV_Disc_D7mm_W3.4mm_P5mm" V 2080 2000 50  0001 C CNN
-F 3 "~" H 2150 2000 50  0001 C CNN
-	1    2150 2000
+P 2300 1850
+F 0 "RV1" H 2403 1896 50  0000 L CNN
+F 1 "Varistor" H 2403 1805 50  0000 L CNN
+F 2 "Varistor:RV_Disc_D7mm_W3.4mm_P5mm" V 2230 1850 50  0001 C CNN
+F 3 "~" H 2300 1850 50  0001 C CNN
+	1    2300 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2150 1800 2150 1850
 $Comp
 L Device:Fuse F1
 U 1 1 5ED7F888
-P 2150 1650
-F 0 "F1" H 2210 1696 50  0000 L CNN
-F 1 "Fuse" H 2210 1605 50  0000 L CNN
-F 2 "Fuse:Fuse_SunFuse-6HP" V 2080 1650 50  0001 C CNN
-F 3 "~" H 2150 1650 50  0001 C CNN
-	1    2150 1650
-	1    0    0    -1  
+P 2000 1450
+F 0 "F1" H 2060 1496 50  0000 L CNN
+F 1 "Fuse" H 2060 1405 50  0000 L CNN
+F 2 "Fuse:Fuse_SunFuse-6HP" V 1930 1450 50  0001 C CNN
+F 3 "~" H 2000 1450 50  0001 C CNN
+	1    2000 1450
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	3250 2250 3250 2600
-Wire Wire Line
-	2150 1500 2150 1450
-Wire Wire Line
-	2150 1450 2500 1450
 Wire Wire Line
 	2800 1450 3250 1450
 Wire Notes Line
@@ -157,25 +135,14 @@ Wire Notes Line
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5ED88B7D
-P 2300 4550
-F 0 "J1" H 2380 4542 50  0000 L CNN
-F 1 "Conn_01x02" H 2380 4451 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2300 4550 50  0001 C CNN
-F 3 "~" H 2300 4550 50  0001 C CNN
-	1    2300 4550
-	1    0    0    -1  
+P 1550 2000
+F 0 "J1" H 1630 1992 50  0000 L CNN
+F 1 "Conn_01x02" H 1630 1901 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1550 2000 50  0001 C CNN
+F 3 "~" H 1550 2000 50  0001 C CNN
+	1    1550 2000
+	-1   0    0    -1  
 $EndComp
-Text GLabel 2100 4550 0    50   Input ~ 0
-220AC
-Text GLabel 2100 4650 0    50   Input ~ 0
-Neutro
-Wire Wire Line
-	2000 2250 2150 2250
-Wire Wire Line
-	2150 2250 2150 2300
-Wire Wire Line
-	2150 2150 2150 2250
-Connection ~ 2150 2250
 $Comp
 L Device:R R3
 U 1 1 5ED8E1B7
@@ -237,19 +204,19 @@ Wire Wire Line
 Text GLabel 8743 2334 3    50   Input ~ 0
 Fase_out
 $Comp
-L Connector_Generic:Conn_01x02 J3
+L Connector_Generic:Conn_01x02 J2
 U 1 1 5EDAB3AB
-P 2300 5050
-F 0 "J3" H 2380 5042 50  0000 L CNN
-F 1 "Conn_01x02" H 2380 4951 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2300 5050 50  0001 C CNN
-F 3 "~" H 2300 5050 50  0001 C CNN
-	1    2300 5050
+P 2350 4600
+F 0 "J2" H 2430 4592 50  0000 L CNN
+F 1 "Conn_01x02" H 2430 4501 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2350 4600 50  0001 C CNN
+F 3 "~" H 2350 4600 50  0001 C CNN
+	1    2350 4600
 	1    0    0    -1  
 $EndComp
-Text GLabel 2100 5150 0    50   Input ~ 0
+Text GLabel 2150 4700 0    50   Input ~ 0
 Neutro
-Text GLabel 2100 5050 0    50   Input ~ 0
+Text GLabel 2150 4600 0    50   Input ~ 0
 Fase_out
 $Comp
 L ESP3286:NodeMCU1.0(ESP-12E) U3
@@ -327,33 +294,21 @@ NoConn ~ 7500 4800
 NoConn ~ 7500 4900
 NoConn ~ 7500 5000
 NoConn ~ 7500 5100
-Text GLabel 5050 4350 2    50   Input ~ 0
-VDD
-Text GLabel 5050 4550 2    50   Input ~ 0
-GND_VDD
-Text GLabel 7500 5700 0    50   Input ~ 0
-VDD
-Text GLabel 7500 5600 0    50   Input ~ 0
-GND_VDD
 Wire Notes Line
 	1350 5350 3400 5350
 Wire Notes Line
 	3400 4050 1350 4050
 $Comp
-L Converter_ACDC:HLK-PM03 PS?
+L Converter_ACDC:HLK-PM03 PS1
 U 1 1 5F2C88CC
 P 4650 4450
-F 0 "PS?" H 4650 4775 50  0000 C CNN
+F 0 "PS1" H 4650 4775 50  0000 C CNN
 F 1 "HLK-PM03" H 4650 4684 50  0000 C CNN
 F 2 "Converter_ACDC:Converter_ACDC_HiLink_HLK-PMxx" H 4650 4150 50  0001 C CNN
 F 3 "http://www.hlktech.net/product_detail.php?ProId=59" H 5050 4100 50  0001 C CNN
 	1    4650 4450
 	1    0    0    -1  
 $EndComp
-Text GLabel 4250 4350 0    50   Input ~ 0
-220AC
-Text GLabel 4250 4550 0    50   Input ~ 0
-Neutro
 Wire Notes Line
 	3400 4050 3400 5350
 Wire Notes Line
@@ -366,8 +321,132 @@ Wire Notes Line
 	6050 4050 3850 4050
 Text Notes 3950 4000 0    50   ~ 0
 Fuente de alimentación ESP12E\n
-Text Notes 4100 4950 0    50   ~ 0
-nota: Faltan filtrar la salida y añadir proteccion.
+Text Notes 3950 5300 0    50   ~ 0
+nota: se podría añadir un fusible para proteger el uC\n\n
 Wire Notes Line
 	1350 4050 1350 5350
+Wire Wire Line
+	1750 2000 1750 1450
+Wire Wire Line
+	1750 1450 1850 1450
+Wire Wire Line
+	3250 2600 2300 2600
+Wire Wire Line
+	1750 2100 1750 2200
+Wire Wire Line
+	2150 1450 2300 1450
+Wire Wire Line
+	2300 1700 2300 1450
+Connection ~ 2300 1450
+Wire Wire Line
+	2300 1450 2500 1450
+Wire Wire Line
+	2300 2000 2300 2200
+Wire Wire Line
+	1750 2200 2300 2200
+Connection ~ 2300 2200
+Wire Wire Line
+	2300 2200 2300 2300
+Wire Notes Line
+	950  1050 5500 1050
+Wire Notes Line
+	950  3700 5500 3700
+Text GLabel 2300 1450 1    50   Input ~ 0
+220AC
+Text GLabel 2300 2200 2    50   Input ~ 0
+Neutro
+Wire Notes Line
+	950  1050 950  3700
+Wire Notes Line
+	5500 1050 5500 3700
+$Comp
+L Device:CP C1
+U 1 1 5F2EE584
+P 5300 4450
+F 0 "C1" H 5418 4496 50  0000 L CNN
+F 1 "10uf" H 5418 4405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L31.5mm_W13.0mm_P27.50mm_MKS4" H 5338 4300 50  0001 C CNN
+F 3 "~" H 5300 4450 50  0001 C CNN
+	1    5300 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5F2F294A
+P 5750 4450
+F 0 "C2" H 5868 4496 50  0000 L CNN
+F 1 "22uf" H 5868 4405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L31.5mm_W13.0mm_P27.50mm_MKS4" H 5788 4300 50  0001 C CNN
+F 3 "~" H 5750 4450 50  0001 C CNN
+	1    5750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4350 5050 4300
+Wire Wire Line
+	5050 4300 5300 4300
+Wire Wire Line
+	5300 4300 5750 4300
+Connection ~ 5300 4300
+Wire Wire Line
+	5050 4550 5050 4600
+Wire Wire Line
+	5050 4600 5300 4600
+Wire Wire Line
+	5300 4600 5750 4600
+Connection ~ 5300 4600
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5F2F851E
+P 5750 4300
+F 0 "#PWR0101" H 5750 4150 50  0001 C CNN
+F 1 "+3V3" H 5765 4473 50  0000 C CNN
+F 2 "" H 5750 4300 50  0001 C CNN
+F 3 "" H 5750 4300 50  0001 C CNN
+	1    5750 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 4300
+$Comp
+L power:GND #PWR0102
+U 1 1 5F2FB000
+P 5750 4600
+F 0 "#PWR0102" H 5750 4350 50  0001 C CNN
+F 1 "GND" H 5755 4427 50  0000 C CNN
+F 2 "" H 5750 4600 50  0001 C CNN
+F 3 "" H 5750 4600 50  0001 C CNN
+	1    5750 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 4600
+$Comp
+L power:GND #PWR0103
+U 1 1 5F2FD8F0
+P 7500 5750
+F 0 "#PWR0103" H 7500 5500 50  0001 C CNN
+F 1 "GND" H 7505 5577 50  0000 C CNN
+F 2 "" H 7500 5750 50  0001 C CNN
+F 3 "" H 7500 5750 50  0001 C CNN
+	1    7500 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5750 7500 5700
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5F2FE6E2
+P 7300 5600
+F 0 "#PWR0104" H 7300 5450 50  0001 C CNN
+F 1 "+3V3" H 7315 5773 50  0000 C CNN
+F 2 "" H 7300 5600 50  0001 C CNN
+F 3 "" H 7300 5600 50  0001 C CNN
+	1    7300 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 5600 7500 5600
+Text GLabel 4250 4350 0    50   Input ~ 0
+220AC
+Text GLabel 4250 4550 0    50   Input ~ 0
+Neutro
 $EndSCHEMATC
