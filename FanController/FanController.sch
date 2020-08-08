@@ -137,7 +137,7 @@ L Connector_Generic:Conn_01x02 J1
 U 1 1 5ED88B7D
 P 1550 2000
 F 0 "J1" H 1630 1992 50  0000 L CNN
-F 1 "Conn_01x02" H 1630 1901 50  0000 L CNN
+F 1 "AC" H 1630 1901 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1550 2000 50  0001 C CNN
 F 3 "~" H 1550 2000 50  0001 C CNN
 	1    1550 2000
@@ -208,7 +208,7 @@ L Connector_Generic:Conn_01x02 J2
 U 1 1 5EDAB3AB
 P 2350 4600
 F 0 "J2" H 2430 4592 50  0000 L CNN
-F 1 "Conn_01x02" H 2430 4501 50  0000 L CNN
+F 1 "AC Out" H 2430 4501 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2350 4600 50  0001 C CNN
 F 3 "~" H 2350 4600 50  0001 C CNN
 	1    2350 4600
